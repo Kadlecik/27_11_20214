@@ -28,13 +28,13 @@ class View(ABC):
         pass
 
 # 2. Rozhraní
-class Zobrazitelny(ABC):
+class Display(ABC):
     @abstractmethod
     def show(self):
         pass
 
 # 3. Tridy Button a TextLabel
-class Button(View, Zobrazitelny):
+class Button(View, Display):
     def __init__(self, name, position, label):
         super().__init__(name, position)
         self.label = label
@@ -48,7 +48,7 @@ class Button(View, Zobrazitelny):
     def click(self):
         print(f"Button '{self.label}' clicked!")
 
-class TextLabel(View, Zobrazitelny):
+class TextLabel(View, Display):
     def __init__(self, name, position, text):
         super().__init__(name, position)
         self.text = text
