@@ -6,6 +6,14 @@ class Human:
         self.age = age
         self.gender = gender
 
+    @property
+    def name(self):
+        return self.__name
+
+    @ name.setter
+    def name(self, value):
+        self.__name = value
+
     def __str__(self):
         return f"Name: {self.name}, Age: {self.age}, Gender: {self.gender}"
 
@@ -76,3 +84,6 @@ foreign_passport = ForeignPassport("P123456", "John Doe", "Czech", "1990-01-01",
 
 print(passport)
 print(foreign_passport)
+
+
+
