@@ -34,12 +34,12 @@ class Pilot(Human):
         return f"{Human.__str__(self)}, License Type: {self.license_type}"
 
 # Příklad použití:
-builder = Builder("John", 35, "Male", "Carpenter")
+builder1 = Builder("John", 35, "Male", "Carpenter")
 builder2 = Builder("Ondrej", 45, "Male", "specialista")
 sailor = Sailor("Anna", 28, "Female", "Captain")
 pilot = Pilot("Mike", 42, "Male", "Commercial")
 
-print(builder)
+print(builder1)
 print(builder2)
 print(sailor)
 print(pilot)
